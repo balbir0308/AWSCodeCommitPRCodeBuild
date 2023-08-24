@@ -18,3 +18,6 @@ In this workflow, a pull request is created with the new code in the master bran
 When the build completes, AWS CloudWatch detects that event. Another AWS Lambda function posts an automated comment to the pull request with the results of the build and a link to the build logs. Based on this automated testing, the developer who opened the pull request can update the code to address any build failures, and then update the pull request with those changes. Those updates will be built, and the build results are then posted to the pull request as a comment.
 
 Testing and validating pull requests before they can be merged into production code is a common approach and a best practice when working with CI/CD. Once the pull request is approved and merged into the master branch, it is also a good CI/CD practice to automatically build, test, and deploy that code, as part of this workflow AWS CloudWatch detects change in master branch and calls AWS CodePipeline which start the final provisioning build. Status of AWS CodePipeline is emailed to registered team DL.
+
+
+Terraform Code is available here to provision CICD repo using above design: [Terraform Code](https://github.com/balbir0308/AWSCodeCommitPRCodeBuild/infrastructure)

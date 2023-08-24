@@ -1,0 +1,8 @@
+/setup.sh
+/infrastructure/.terraform.lock.hcl
+/infrastructure/.terraform/
+/infrastructure/terraform.tfstate
+/infrastructure/Testing/
+/infrastructure/PullRequestCodeBuildUpdate.zip
+/infrastructure/PullRequestComment.zip
+/infrastructure/terraform.tfstate.backup
