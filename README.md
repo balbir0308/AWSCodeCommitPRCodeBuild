@@ -20,7 +20,7 @@ When the build completes, AWS CloudWatch detects that event. Another AWS Lambda 
 Testing and validating pull requests before they can be merged into production code is a common approach and a best practice when working with CI/CD. Once the pull request is approved and merged into the master branch, it is also a good CI/CD practice to automatically build, test, and deploy that code, as part of this workflow AWS CloudWatch detects change in master branch and calls AWS CodePipeline which start the final provisioning build. Status of AWS CodePipeline is emailed to registered team DL.
 
 
-Terraform Code is available here to provision CICD repo using above design: [Terraform Code](https://github.com/balbir0308/AWSCodeCommitPRCodeBuild/infrastructure)
+Terraform Code is available here to provision CICD repo using above design: [Terraform Code](./infrastructure)
 
 To get started modify following attributes in [locals.tf](./infrastructure/locals.tf) file:
 
