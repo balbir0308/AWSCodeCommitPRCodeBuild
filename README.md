@@ -21,3 +21,9 @@ Testing and validating pull requests before they can be merged into production c
 
 
 Terraform Code is available here to provision CICD repo using above design: [Terraform Code](https://github.com/balbir0308/AWSCodeCommitPRCodeBuild/infrastructure)
+
+To get started modify following attributes in [locals.tf](locals.tf) file:
+
+- application_common_name (All resources will be build using this name)
+- codecommit_branch_name  (Final branch name master or main)
+- s3_artifact_bucket_name  (Artifactory S3 bucket name, will be provisioned using terraform)
